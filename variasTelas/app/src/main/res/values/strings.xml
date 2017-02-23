@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">variasTelas</string>
+    <string name="btTela1">Tela1</string>
+    <string name="btTela2">Tela2</string>
+    <string name="tvMenu">Menu</string>
+</resources>
