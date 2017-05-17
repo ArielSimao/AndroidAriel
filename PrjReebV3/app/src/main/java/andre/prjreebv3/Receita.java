@@ -23,20 +23,6 @@ public class Receita extends Activity {
         btnVoltar = (Button) findViewById(R.id.btnVoltar);  //Temos que trazer as views que fazem o movimento, no caso os botões
 
 
-         /*
-        private EditText txtData;
-        private EditText edtData;
-        private EditText txtLote;
-        private EditText edtLote;
-        private EditText txtAgua;
-        private EditText edtAgua;
-        private EditText txtLupulo;
-        private EditText edtLupulo;
-        private Button btnCalcular;
-        private EditText txtPorAgua;
-        private EditText txtPorLupulo;
-
-        */
 
         btnVoltar.setOnClickListener(new View.OnClickListener() {// depois do new clicamos ctrl space e ele mostra as opções
             @Override
@@ -61,32 +47,3 @@ public class Receita extends Activity {
 
 }
 
-/*
-
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.receita);
-
-            a1= (EditText) findViewById(R.id.txtAgua);
-            l2= (EditText) findViewById(R.id.txtLupulo);
-
-            btnCalcular = (Button) findViewById(R.id.btnCalcular);
-
-            porAgua = (TextView) findViewById(R.id.txtporAgua);
-            porLupulo = (TextView) findViewById(R.id.txtporLupulo);
-
-
-            btnCalcular.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View view){
-
-            Double Agua = Double.valueOf(Agua.getText().toString());
-            Double Lupulo = Double.valueOf(Lupulo.getText().toString());
-
-            Double porAgua = (a1)/SomaTotal;
-            Double porLupulo =
-
-            mediaFinal.setText(media.toString());
-
- */

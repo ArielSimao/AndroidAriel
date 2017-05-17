@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class BuscaReceitasTipo extends Activity {
 
@@ -17,6 +18,7 @@ public class BuscaReceitasTipo extends Activity {
         setContentView(R.layout.activity_busca_receitas_tipo);
 
         btnVoltar = (Button) findViewById(R.id.btnVoltar);
+
 
 
 

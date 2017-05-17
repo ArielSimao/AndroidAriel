@@ -2,11 +2,13 @@
 <items version="2" >
 
     <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        is-multidex="false"
+        jar="/Users/DjAriel/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
-        revision="21.1.2"
+        optimize="true"
+        revision="25.0.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="D:\AndroidStudioProjects\009_BancoDeDados_Uso\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-73b9883bfda7e9a6ae205d0e99c174e73ba72aaa.jar" />
+        <dex dex="/Users/DjAriel/Documents/AndroidAriel/009_BancoDeDados_Uso/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0_03a6b3736f923bed5f4200d72ce2123035b48e5d.jar" />
     </item>
 
 </items>

@@ -12,6 +12,7 @@ public class Menu extends Activity {
 
 
     private Button btnRec;
+    private Button btnPro;
     private Button btnDados;
     private static Button btnSair;
 
@@ -22,12 +23,10 @@ public class Menu extends Activity {
 
 
         btnRec = (Button) findViewById(R.id.btnRec);//botão receita encontrado via id
-        btnSair = (Button) findViewById(R.id.btnSair);
+        btnPro = (Button) findViewById(R.id.btnPro);//botão processos encontrado via id
         btnDados = (Button) findViewById(R.id.btnDados);
+        btnSair = (Button) findViewById(R.id.btnSair);
 
-        /*
-        btnPro = (Button) findViewById(R.id.btnPro);
-        */
 
         btnRec.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,19 +36,14 @@ public class Menu extends Activity {
             }
         });
 
-
-
-    /*
-
         btnPro.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent it = new Intent(getBaseContext(),Processo.class);
+            public void onClick(View view) {//declarando o metodo onClick
+                Intent it = new Intent(getBaseContext(), Processos.class);
                 startActivity(it);
             }
         });
 
-         */
 
         btnDados.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,14 +52,6 @@ public class Menu extends Activity {
                 startActivity(it);
             }
         });
-
-
-
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {//declarando o metodo onCreate
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu);*/
-
 
 
         btnSair.setOnClickListener(new View.OnClickListener() {

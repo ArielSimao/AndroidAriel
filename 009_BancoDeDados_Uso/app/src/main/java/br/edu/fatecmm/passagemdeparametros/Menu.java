@@ -35,7 +35,7 @@ public class Menu extends Activity {
 			}
 		}
 		
-		if(!"juca".equalsIgnoreCase(strUsuario) || !"senha".equals(strSenha))
+		if(!"Ariel".equalsIgnoreCase(strUsuario) || !"abner".equals(strSenha))
 		{
 			Toast.makeText(getBaseContext(), "Usuário ou senha inválidos", Toast.LENGTH_LONG).show();
 			finish();

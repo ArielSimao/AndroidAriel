@@ -43,6 +43,7 @@ public class TodosAutores extends Activity {
 		ArrayAdapter<BeanAutores> adapter = new 
 				ArrayAdapter<BeanAutores>(getBaseContext(),
 						android.R.layout.simple_list_item_1, lstAutores);
+
 		lstTodosAutores.setAdapter(adapter);
 		
 		// botão voltar

@@ -3,8 +3,6 @@ package br.edu.fatecmm.banco;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.edu.fatecmm.pojo.BeanLivros;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -46,7 +44,7 @@ public class DAOLivros {
 		gerenciaBanco.close();
 	}
 	
-	public void insert(BeanLivros item)
+	public void insert(DAOEditoras.BeanLivros item)
 	{
 		ContentValues valores = new ContentValues();
 		valores.put(NM_LIVRO, item.getNmLivro());
@@ -58,7 +56,7 @@ public class DAOLivros {
 		banco.insert(TABELA_LIVROS, null, valores);
 	}
 	
-	public void update(BeanLivros item)
+	public void update(DAOEditoras.BeanLivros item)
 	{
 		ContentValues valores = new ContentValues();
 		
@@ -71,21 +69,21 @@ public class DAOLivros {
 		banco.update(TABELA_LIVROS, valores, ID_LIVRO + " = " + item.getIdLivro(), null);
 	}
 	
-	public void delete(BeanLivros item)
+	public void delete(DAOEditoras.BeanLivros item)
 	{
 		int id = item.getIdLivro();
 		banco.delete(TABELA_LIVROS, ID_LIVRO + " = " + id, null);
 	}
 	
-	public List<BeanLivros> selectTodos()
+	public List<DAOEditoras.BeanLivros> selectTodos()
 	{
-		List<BeanLivros> itens = new ArrayList<BeanLivros>();
+		List<DAOEditoras.BeanLivros> itens = new ArrayList<DAOEditoras.BeanLivros>();
 		Cursor cursor = banco.query(TABELA_LIVROS, 
 			todasAsColunas, null, null, null, null, NM_LIVRO);
 		cursor.moveToFirst();
 		while(!cursor.isAfterLast())
 		{
-			BeanLivros item = cursorToItem(cursor);
+			DAOEditoras.BeanLivros item = cursorToItem(cursor);
 			itens.add(item);
 			cursor.moveToNext();
 		}
@@ -93,7 +91,7 @@ public class DAOLivros {
 		return itens;
 	}
 	
-	public BeanLivros selectUm(BeanLivros item)
+	public DAOEditoras.BeanLivros selectUm(DAOEditoras.BeanLivros item)
 	{
 		Cursor cursor = banco.query(
 				TABELA_LIVROS, 
@@ -104,9 +102,9 @@ public class DAOLivros {
 		return cursorToItem(cursor);
 	}
 	
-	private BeanLivros cursorToItem(Cursor cursor)
+	private DAOEditoras.BeanLivros cursorToItem(Cursor cursor)
 	{
-		BeanLivros item = new BeanLivros();
+		DAOEditoras.BeanLivros item = new DAOEditoras.BeanLivros();
 		
 		item.setIdAutor(cursor.getInt(0));
 		item.setNmLivro(cursor.getString(1));

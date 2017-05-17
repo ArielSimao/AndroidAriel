@@ -35,7 +35,12 @@
         <activity android:name=".BuscaReceitas" />
         <activity android:name=".BuscaReceitasData" />
         <activity android:name=".BuscaReceitasTipo" />
-        <activity android:name=".BuscaReceitasLote"></activity>
+        <activity android:name=".BuscaReceitasLote" />
+        <activity android:name=".Processos" />
+        <activity android:name=".BuscaProcessosData" />
+        <activity android:name=".BuscaProcessosTipo" />
+        <activity android:name=".BuscaProcessosLote" />
+        <activity android:name=".BuscaProcessos"></activity>
     </application>
 
 </manifest>
